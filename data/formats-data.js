@@ -55,7 +55,7 @@ exports.BattleFormatsData = {
 		tier: "Bank-NFE",
 	},
 	charizard: {
-		randomBattleMoves: ["fireblast", "airslash", "focusblast", "roost", "swordsdance", "flareblitz", "acrobatics", "earthquake"],
+		randomBattleMoves: ["fireblast", "airslash", "focusblast", "roost", "swordsdance", "flamecharge", "acrobatics", "earthquake", "willowisp"],
 		randomDoubleBattleMoves: ["heatwave", "fireblast", "airslash", "overheat", "dragonpulse", "roost", "tailwind", "protect"],
 		eventPokemon: [
 			{"generation": 3, "level": 70, "moves":["wingattack", "slash", "dragonrage", "firespin"]},
@@ -146,7 +146,7 @@ exports.BattleFormatsData = {
 		randomBattleMoves: ["xscissor", "swordsdance", "uturn", "poisonjab", "drillrun", "knockoff"],
 		randomDoubleBattleMoves: ["xscissor", "uturn", "substitute", "poisonjab", "drillrun", "knockoff", "protect"],
 		requiredItem: "Beedrillite",
-		tier: "Bank",
+		tier: "Unreleased",
 	},
 	pidgey: {
 		randomBattleMoves: ["roost", "bravebird", "heatwave", "return", "workup", "uturn", "thief"],
@@ -173,7 +173,7 @@ exports.BattleFormatsData = {
 		randomBattleMoves: ["roost", "heatwave", "uturn", "hurricane", "defog"],
 		randomDoubleBattleMoves: ["tailwind", "heatwave", "uturn", "hurricane", "protect"],
 		requiredItem: "Pidgeotite",
-		tier: "Bank",
+		tier: "Unreleased",
 	},
 	rattata: {
 		randomBattleMoves: ["facade", "flamewheel", "suckerpunch", "uturn", "wildcharge", "thunderwave", "crunch", "revenge"],
@@ -293,6 +293,7 @@ exports.BattleFormatsData = {
 			{"generation": 6, "level": 99, "isHidden": false, "moves":["happyhour", "playnice", "holdhands", "flash"], "pokeball": "cherishball"},
 			{"generation": 6, "level": 10, "isHidden": false, "moves":["fly", "surf", "agility", "celebrate"], "pokeball": "cherishball"},
 			{"generation": 6, "level": 10, "isHidden": false, "moves":["bestow", "holdhands", "return", "playnice"], "pokeball": "healball"},
+			{"generation": 7, "level": 10, "nature": "Jolly", "isHidden": false, "moves":["celebrate", "growl", "playnice", "quickattack"], "pokeball": "cherishball"},
 		],
 		tier: "NFE",
 	},
@@ -431,6 +432,9 @@ exports.BattleFormatsData = {
 		tier: "Bank-LC",
 	},
 	vulpixalola: {
+		eventPokemon: [
+			{"generation": 7, "level": 10, "isHidden": false, "moves":["celebrate", "tailwhip", "babydolleyes", "iceshard"], "pokeball": "cherishball"},
+		],
 		tier: "LC",
 	},
 	ninetales: {
@@ -504,7 +508,7 @@ exports.BattleFormatsData = {
 		tier: "Bank",
 	},
 	bellossom: {
-		randomBattleMoves: ["gigadrain", "synthesis", "sleeppowder", "hiddenpowerfire", "sunnyday"],
+		randomBattleMoves: ["gigadrain", "sleeppowder", "hiddenpowerfire", "hiddenpowerrock", "quiverdance", "moonblast"],
 		randomDoubleBattleMoves: ["gigadrain", "sludgebomb", "sleeppowder", "stunspore", "protect", "hiddenpowerfire", "moonblast", "dazzlinggleam", "sunnyday", "solarbeam"],
 		tier: "Bank",
 	},
@@ -941,7 +945,7 @@ exports.BattleFormatsData = {
 		randomBattleMoves: ["stealthrock", "earthquake", "heavyslam", "roar", "toxic", "dragontail"],
 		randomDoubleBattleMoves: ["stealthrock", "earthquake", "heavyslam", "rockslide", "protect", "explosion"],
 		requiredItem: "Steelixite",
-		tier: "Bank",
+		tier: "Unreleased",
 	},
 	drowzee: {
 		randomBattleMoves: ["psychic", "seismictoss", "thunderwave", "wish", "protect", "toxic", "shadowball", "trickroom", "calmmind", "dazzlinggleam"],
@@ -1380,6 +1384,7 @@ exports.BattleFormatsData = {
 			{"generation": 5, "level": 50, "gender": "F", "nature": "Hardy", "isHidden": false, "abilities":["adaptability"], "moves":["sing", "return", "echoedvoice", "attract"], "pokeball": "cherishball"},
 			{"generation": 6, "level": 10, "isHidden": false, "moves":["celebrate", "sandattack", "babydolleyes", "swift"], "pokeball": "cherishball"},
 			{"generation": 6, "level": 15, "shiny": true, "isHidden": true, "moves":["swift", "quickattack", "babydolleyes", "helpinghand"], "pokeball": "cherishball"},
+			{"generation": 7, "level": 10, "nature": "Jolly", "isHidden": false, "moves":["celebrate", "sandattack", "babydolleyes"], "pokeball": "cherishball"},
 		],
 		tier: "LC",
 	},
@@ -1453,7 +1458,7 @@ exports.BattleFormatsData = {
 		eventPokemon: [
 			{"generation": 5, "level": 10, "isHidden": true, "moves":["tackle", "conversion", "sharpen", "psybeam"]},
 		],
-		tier: "LC",
+		tier: "LC Uber",
 	},
 	porygon2: {
 		randomBattleMoves: ["triattack", "icebeam", "recover", "toxic", "thunderwave", "thunderbolt"],
@@ -1508,6 +1513,7 @@ exports.BattleFormatsData = {
 		eventPokemon: [
 			{"generation": 4, "level": 5, "moves":["metronome", "tackle", "defensecurl", "selfdestruct"]},
 			{"generation": 4, "level": 5, "gender": "F", "nature": "Relaxed", "abilities":["thickfat"], "moves":["metronome", "odorsleuth", "tackle", "curse"], "pokeball": "cherishball"},
+			{"generation": 7, "level": 5, "isHidden": false, "abilities":["thickfat"], "moves":["tackle", "metronome", "holdback", "happyhour"], "pokeball": "cherishball"},
 		],
 		tier: "LC",
 	},
@@ -1605,12 +1611,12 @@ exports.BattleFormatsData = {
 	mewtwomegax: {
 		randomBattleMoves: ["bulkup", "drainpunch", "earthquake", "taunt", "stoneedge", "zenheadbutt", "icebeam"],
 		requiredItem: "Mewtwonite X",
-		tier: "Bank-Uber",
+		tier: "Unreleased",
 	},
 	mewtwomegay: {
 		randomBattleMoves: ["psystrike", "aurasphere", "shadowball", "fireblast", "icebeam", "calmmind", "recover", "willowisp", "taunt"],
 		requiredItem: "Mewtwonite Y",
-		tier: "Bank-Uber",
+		tier: "Unreleased",
 	},
 	mew: {
 		randomBattleMoves: ["defog", "roost", "willowisp", "knockoff", "taunt", "icebeam", "earthpower", "aurasphere", "stealthrock", "nastyplot", "psyshock", "batonpass"],
@@ -1816,7 +1822,7 @@ exports.BattleFormatsData = {
 		randomBattleMoves: ["voltswitch", "focusblast", "agility", "thunderbolt", "healbell", "dragonpulse"],
 		randomDoubleBattleMoves: ["focusblast", "hiddenpowerice", "hiddenpowergrass", "thunderbolt", "discharge", "dragonpulse", "protect"],
 		requiredItem: "Ampharosite",
-		tier: "Bank",
+		tier: "Unreleased",
 	},
 	azurill: {
 		randomBattleMoves: ["scald", "return", "bodyslam", "encore", "toxic", "protect", "knockoff"],
@@ -2019,7 +2025,7 @@ exports.BattleFormatsData = {
 		randomBattleMoves: ["closecombat", "pinmissile", "rockblast", "swordsdance", "bulletseed", "substitute"],
 		randomDoubleBattleMoves: ["closecombat", "pinmissile", "rockblast", "swordsdance", "bulletseed", "knockoff", "earthquake", "protect"],
 		requiredItem: "Heracronite",
-		tier: "Bank",
+		tier: "Unreleased",
 	},
 	sneasel: {
 		randomBattleMoves: ["iceshard", "iciclecrash", "lowkick", "pursuit", "swordsdance", "knockoff"],
@@ -2116,8 +2122,8 @@ exports.BattleFormatsData = {
 		tier: "Bank-LC",
 	},
 	mantine: {
-		randomBattleMoves: ["scald", "airslash", "rest", "sleeptalk", "toxic", "defog"],
-		randomDoubleBattleMoves: ["raindance", "hydropump", "scald", "airslash", "icebeam", "tailwind", "wideguard", "helpinghand", "protect", "surf"],
+		randomBattleMoves: ["scald", "airslash", "roost", "toxic", "defog"],
+		randomDoubleBattleMoves: ["raindance", "scald", "airslash", "icebeam", "tailwind", "wideguard", "helpinghand", "protect", "surf"],
 		eventPokemon: [
 			{"generation": 3, "level": 10, "gender": "M", "moves":["tackle", "bubble", "supersonic"]},
 		],
@@ -2148,7 +2154,7 @@ exports.BattleFormatsData = {
 		randomBattleMoves: ["nastyplot", "darkpulse", "taunt", "fireblast", "hiddenpowergrass"],
 		randomDoubleBattleMoves: ["nastyplot", "darkpulse", "taunt", "heatwave", "hiddenpowergrass", "protect"],
 		requiredItem: "Houndoominite",
-		tier: "Bank",
+		tier: "Unreleased",
 	},
 	phanpy: {
 		randomBattleMoves: ["stealthrock", "earthquake", "iceshard", "headsmash", "knockoff", "seedbomb", "superpower", "playrough"],
@@ -2256,7 +2262,7 @@ exports.BattleFormatsData = {
 		randomBattleMoves: ["crunch", "stoneedge", "earthquake", "icepunch", "dragondance"],
 		randomDoubleBattleMoves: ["crunch", "stoneedge", "earthquake", "icepunch", "dragondance", "rockslide", "protect"],
 		requiredItem: "Tyranitarite",
-		tier: "Bank",
+		tier: "Unreleased",
 	},
 	lugia: {
 		randomBattleMoves: ["toxic", "roost", "substitute", "whirlwind", "thunderwave", "dragontail", "aeroblast"],
@@ -2315,8 +2321,8 @@ exports.BattleFormatsData = {
 		tier: "Bank-NFE",
 	},
 	sceptile: {
-		randomBattleMoves: ["substitute", "gigadrain", "leafstorm", "hiddenpowerice", "focusblast", "hiddenpowerfire"],
-		randomDoubleBattleMoves: ["substitute", "gigadrain", "leafstorm", "hiddenpowerice", "focusblast", "hiddenpowerfire", "protect"],
+		randomBattleMoves: ["gigadrain", "leafstorm", "hiddenpowerice", "focusblast", "hiddenpowerflying"],
+		randomDoubleBattleMoves: ["gigadrain", "leafstorm", "hiddenpowerice", "focusblast", "hiddenpowerfire", "protect"],
 		eventPokemon: [
 			{"generation": 5, "level": 50, "shiny": 1, "isHidden": false, "moves":["leafstorm", "dragonpulse", "focusblast", "rockslide"], "pokeball": "cherishball"},
 		],
@@ -2326,7 +2332,7 @@ exports.BattleFormatsData = {
 		randomBattleMoves: ["substitute", "gigadrain", "dragonpulse", "focusblast", "swordsdance", "outrage", "leafblade", "earthquake", "hiddenpowerfire"],
 		randomDoubleBattleMoves: ["substitute", "gigadrain", "leafstorm", "hiddenpowerice", "focusblast", "dragonpulse", "hiddenpowerfire", "protect"],
 		requiredItem: "Sceptilite",
-		tier: "Bank",
+		tier: "Unreleased",
 	},
 	torchic: {
 		randomBattleMoves: ["protect", "batonpass", "substitute", "hiddenpowergrass", "swordsdance", "firepledge"],
@@ -2352,7 +2358,7 @@ exports.BattleFormatsData = {
 	blazikenmega: {
 		randomBattleMoves: ["flareblitz", "highjumpkick", "protect", "swordsdance", "substitute", "batonpass", "stoneedge", "knockoff"],
 		requiredItem: "Blazikenite",
-		tier: "Bank-Uber",
+		tier: "Unreleased",
 	},
 	mudkip: {
 		randomBattleMoves: ["hydropump", "earthpower", "hiddenpowerelectric", "icebeam", "sludgewave"],
@@ -2378,7 +2384,7 @@ exports.BattleFormatsData = {
 		randomBattleMoves: ["raindance", "waterfall", "earthquake", "icepunch", "superpower"],
 		randomDoubleBattleMoves: ["waterfall", "earthquake", "raindance", "icepunch", "superpower", "protect"],
 		requiredItem: "Swampertite",
-		tier: "Bank",
+		tier: "Unreleased",
 	},
 	poochyena: {
 		randomBattleMoves: ["superfang", "foulplay", "suckerpunch", "toxic", "crunch", "firefang", "icefang", "poisonfang"],
@@ -2518,7 +2524,7 @@ exports.BattleFormatsData = {
 		randomBattleMoves: ["calmmind", "hypervoice", "psyshock", "focusblast", "substitute", "taunt", "willowisp"],
 		randomDoubleBattleMoves: ["psyshock", "focusblast", "shadowball", "calmmind", "thunderbolt", "hypervoice", "protect"],
 		requiredItem: "Gardevoirite",
-		tier: "Bank",
+		tier: "Unreleased",
 	},
 	gallade: {
 		randomBattleMoves: ["bulkup", "drainpunch", "icepunch", "shadowsneak", "closecombat", "zenheadbutt", "knockoff", "trick"],
@@ -2529,7 +2535,7 @@ exports.BattleFormatsData = {
 		randomBattleMoves: ["swordsdance", "closecombat", "drainpunch", "knockoff", "zenheadbutt", "substitute"],
 		randomDoubleBattleMoves: ["closecombat", "stoneedge", "drainpunch", "icepunch", "zenheadbutt", "swordsdance", "knockoff", "protect"],
 		requiredItem: "Galladite",
-		tier: "Bank",
+		tier: "Unreleased",
 	},
 	surskit: {
 		randomBattleMoves: ["hydropump", "signalbeam", "hiddenpowerfire", "stickyweb", "gigadrain", "powersplit"],
@@ -2688,7 +2694,7 @@ exports.BattleFormatsData = {
 		randomBattleMoves: ["swordsdance", "ironhead", "firefang", "substitute", "playrough", "suckerpunch", "knockoff", "focuspunch"],
 		randomDoubleBattleMoves: ["swordsdance", "ironhead", "firefang", "substitute", "playrough", "suckerpunch", "knockoff", "protect"],
 		requiredItem: "Mawilite",
-		tier: "Bank",
+		tier: "Unreleased",
 	},
 	aron: {
 		randomBattleMoves: ["headsmash", "ironhead", "earthquake", "superpower", "stealthrock", "endeavor"],
@@ -2712,7 +2718,7 @@ exports.BattleFormatsData = {
 		randomBattleMoves: ["earthquake", "heavyslam", "icepunch", "stealthrock", "thunderwave", "roar", "toxic"],
 		randomDoubleBattleMoves: ["rockslide", "earthquake", "lowkick", "heavyslam", "aquatail", "protect"],
 		requiredItem: "Aggronite",
-		tier: "Bank",
+		tier: "Unreleased",
 	},
 	meditite: {
 		randomBattleMoves: ["highjumpkick", "psychocut", "icepunch", "thunderpunch", "trick", "fakeout", "bulletpunch", "drainpunch", "zenheadbutt"],
@@ -2731,7 +2737,7 @@ exports.BattleFormatsData = {
 		randomBattleMoves: ["highjumpkick", "drainpunch", "icepunch", "fakeout", "zenheadbutt"],
 		randomDoubleBattleMoves: ["highjumpkick", "drainpunch", "zenheadbutt", "icepunch", "bulletpunch", "protect", "fakeout"],
 		requiredItem: "Medichamite",
-		tier: "Bank",
+		tier: "Unreleased",
 	},
 	electrike: {
 		randomBattleMoves: ["voltswitch", "thunderbolt", "hiddenpowerice", "switcheroo", "flamethrower", "hiddenpowergrass"],
@@ -2750,7 +2756,7 @@ exports.BattleFormatsData = {
 		randomBattleMoves: ["voltswitch", "thunderbolt", "hiddenpowerice", "hiddenpowergrass", "overheat"],
 		randomDoubleBattleMoves: ["voltswitch", "thunderbolt", "hiddenpowerice", "hiddenpowergrass", "overheat", "flamethrower", "snarl", "protect"],
 		requiredItem: "Manectite",
-		tier: "Bank",
+		tier: "Unreleased",
 	},
 	plusle: {
 		randomBattleMoves: ["nastyplot", "thunderbolt", "substitute", "batonpass", "hiddenpowerice", "encore"],
@@ -2827,7 +2833,7 @@ exports.BattleFormatsData = {
 		tier: "New",
 	},
 	sharpedomega: {
-		randomBattleMoves: ["protect", "icefang", "crunch", "earthquake", "waterfall", "zenheadbutt"],
+		randomBattleMoves: ["protect", "icefang", "crunch", "earthquake", "waterfall", "psychicfangs"],
 		requiredItem: "Sharpedonite",
 		tier: "New",
 	},
@@ -2864,7 +2870,7 @@ exports.BattleFormatsData = {
 		randomBattleMoves: ["stealthrock", "fireblast", "earthpower", "ancientpower", "willowisp", "toxic"],
 		randomDoubleBattleMoves: ["fireblast", "earthpower", "heatwave", "eruption", "rockslide", "protect"],
 		requiredItem: "Cameruptite",
-		tier: "Bank",
+		tier: "Unreleased",
 	},
 	torkoal: {
 		randomBattleMoves: ["shellsmash", "fireblast", "earthpower", "hiddenpowergrass", "stealthrock", "rapidspin", "yawn", "lavaplume"],
@@ -2950,7 +2956,7 @@ exports.BattleFormatsData = {
 		randomBattleMoves: ["dragondance", "return", "hypervoice", "healbell", "earthquake", "roost", "dracometeor", "fireblast"],
 		randomDoubleBattleMoves: ["dragondance", "return", "doubleedge", "dragonclaw", "earthquake", "protect", "fireblast"],
 		requiredItem: "Altarianite",
-		tier: "Bank",
+		tier: "Unreleased",
 	},
 	zangoose: {
 		randomBattleMoves: ["swordsdance", "closecombat", "knockoff", "quickattack", "facade"],
@@ -3112,7 +3118,7 @@ exports.BattleFormatsData = {
 		randomBattleMoves: ["destinybond", "taunt", "shadowclaw", "suckerpunch", "willowisp", "knockoff"],
 		randomDoubleBattleMoves: ["destinybond", "taunt", "shadowclaw", "suckerpunch", "willowisp", "knockoff", "protect"],
 		requiredItem: "Banettite",
-		tier: "Bank",
+		tier: "Unreleased",
 	},
 	duskull: {
 		randomBattleMoves: ["willowisp", "shadowsneak", "painsplit", "substitute", "nightshade", "destinybond", "trickroom"],
@@ -3359,7 +3365,7 @@ exports.BattleFormatsData = {
 		randomBattleMoves: ["calmmind", "dragonpulse", "surf", "dracometeor", "roost", "hiddenpowerfire", "substitute", "psyshock"],
 		randomDoubleBattleMoves: ["dragonpulse", "psychic", "tailwind", "helpinghand", "healpulse", "lightscreen", "reflect", "protect"],
 		requiredItem: "Latiasite",
-		tier: "Bank",
+		tier: "Unreleased",
 	},
 	latios: {
 		randomBattleMoves: ["dracometeor", "hiddenpowerfire", "surf", "thunderbolt", "psyshock", "roost", "trick", "defog"],
@@ -3381,7 +3387,7 @@ exports.BattleFormatsData = {
 		randomBattleMoves: ["calmmind", "dracometeor", "hiddenpowerfire", "psyshock", "roost", "memento", "defog"],
 		randomDoubleBattleMoves: ["dracometeor", "dragonpulse", "surf", "thunderbolt", "psyshock", "substitute", "tailwind", "protect", "hiddenpowerfire"],
 		requiredItem: "Latiosite",
-		tier: "Bank",
+		tier: "Unreleased",
 	},
 	kyogre: {
 		randomBattleMoves: ["waterspout", "originpulse", "scald", "thunder", "icebeam"],
@@ -3443,7 +3449,7 @@ exports.BattleFormatsData = {
 		// randomBattleMoves: ["vcreate", "extremespeed", "swordsdance", "earthquake", "dragonascent", "dragonclaw", "dragondance"],
 		randomDoubleBattleMoves: ["vcreate", "extremespeed", "swordsdance", "earthquake", "dragonascent", "dragonclaw", "dragondance", "protect"],
 		requiredMove: "Dragon Ascent",
-		tier: "Bank",
+		tier: "AG",
 	},
 	jirachi: {
 		randomBattleMoves: ["ironhead", "uturn", "firepunch", "icepunch", "trick", "stealthrock", "bodyslam", "toxic", "wish", "substitute"],
@@ -3602,8 +3608,8 @@ exports.BattleFormatsData = {
 		tier: "Bank-LC",
 	},
 	bibarel: {
-		randomBattleMoves: ["return", "waterfall", "curse", "quickattack", "stealthrock", "rest"],
-		randomDoubleBattleMoves: ["return", "waterfall", "curse", "quickattack", "protect", "rest"],
+		randomBattleMoves: ["return", "waterfall", "swordsdance", "quickattack", "aquajet"],
+		randomDoubleBattleMoves: ["return", "waterfall", "curse", "aquajet", "quickattack", "protect", "rest"],
 		tier: "Bank",
 	},
 	kricketot: {
@@ -3727,10 +3733,10 @@ exports.BattleFormatsData = {
 	},
 	drifloon: {
 		randomBattleMoves: ["shadowball", "substitute", "calmmind", "hypnosis", "hiddenpowerfighting", "thunderbolt", "destinybond", "willowisp"],
-		tier: "LC Uber",
+		tier: "LC",
 	},
 	drifblim: {
-		randomBattleMoves: ["acrobatics", "willowisp", "substitute", "destinybond", "shadowball"],
+		randomBattleMoves: ["acrobatics", "willowisp", "substitute", "destinybond", "shadowball", "hex"],
 		randomDoubleBattleMoves: ["shadowball", "substitute", "hypnosis", "hiddenpowerfighting", "thunderbolt", "destinybond", "willowisp", "protect"],
 		tier: "New",
 	},
@@ -3747,7 +3753,7 @@ exports.BattleFormatsData = {
 		randomBattleMoves: ["return", "highjumpkick", "substitute", "thunderpunch", "icepunch"],
 		randomDoubleBattleMoves: ["return", "highjumpkick", "protect", "fakeout", "icepunch", "encore"],
 		requiredItem: "Lopunnite",
-		tier: "Bank",
+		tier: "Unreleased",
 	},
 	glameow: {
 		randomBattleMoves: ["fakeout", "uturn", "suckerpunch", "hypnosis", "quickattack", "return", "foulplay"],
@@ -3901,7 +3907,7 @@ exports.BattleFormatsData = {
 		randomBattleMoves: ["blizzard", "gigadrain", "woodhammer", "earthquake", "iceshard", "hiddenpowerfire"],
 		randomDoubleBattleMoves: ["blizzard", "iceshard", "gigadrain", "protect", "focusblast", "woodhammer", "earthquake"],
 		requiredItem: "Abomasite",
-		tier: "Bank",
+		tier: "Unreleased",
 	},
 	rotom: {
 		randomBattleMoves: ["thunderbolt", "voltswitch", "shadowball", "substitute", "painsplit", "hiddenpowerice", "trick", "willowisp"],
@@ -4459,7 +4465,7 @@ exports.BattleFormatsData = {
 		randomBattleMoves: ["wish", "calmmind", "healbell", "dazzlinggleam", "hypervoice", "protect"],
 		randomDoubleBattleMoves: ["healpulse", "protect", "healbell", "trickroom", "thunderwave", "hypervoice", "helpinghand", "dazzlinggleam"],
 		requiredItem: "Audinite",
-		tier: "Bank",
+		tier: "Unreleased",
 	},
 	timburr: {
 		randomBattleMoves: ["machpunch", "bulkup", "drainpunch", "icepunch", "knockoff"],
@@ -5134,7 +5140,7 @@ exports.BattleFormatsData = {
 			{"generation": 6, "level": 50, "nature": "Adamant", "ivs": {"hp": 31, "atk": 31, "def": 31, "spa": 1, "spd": 31, "spe": 24}, "isHidden": false, "moves":["earthquake", "knockoff", "uturn", "rocktomb"], "pokeball": "cherishball"},
 		],
 		eventOnly: true,
-		tier: "Bank",
+		tier: "Bank-Uber",
 	},
 	landorustherian: {
 		randomBattleMoves: ["swordsdance", "rockpolish", "earthquake", "stoneedge", "uturn", "superpower", "stealthrock"],
@@ -5296,11 +5302,14 @@ exports.BattleFormatsData = {
 		tier: "New",
 	},
 	greninjaash: {
+		randomBattleMoves: ["hydropump", "icebeam", "darkpulse", "watershuriken", "uturn"],
 		eventPokemon: [
 			{"generation": 7, "level": 36, "ivs": {"hp": 20, "atk": 31, "def": 20, "spa": 31, "spd": 20, "spe": 31}, "moves":["watershuriken", "aerialace", "doubleteam", "nightslash"]},
 		],
 		eventOnly: true,
 		gen: 7,
+		requiredAbility: "Battle Bond",
+		battleOnly: true,
 		tier: "New",
 	},
 	bunnelby: {
@@ -5436,7 +5445,7 @@ exports.BattleFormatsData = {
 		eventPokemon: [
 			{"generation": 6, "level": 50, "gender": "F", "nature": "Quiet", "moves":["wideguard", "kingsshield", "shadowball", "flashcannon"], "pokeball": "cherishball"},
 		],
-		tier: "New",
+		tier: "Uber",
 	},
 	aegislashblade: {
 		battleOnly: true,
@@ -5670,12 +5679,13 @@ exports.BattleFormatsData = {
 		tier: "Bank-Uber",
 	},
 	zygarde: {
-		randomBattleMoves: ["dragondance", "earthquake", "outrage", "extremespeed", "stoneedge"],
-		randomDoubleBattleMoves: ["dragondance", "landswrath", "extremespeed", "rockslide", "coil", "stoneedge", "glare", "protect"],
+		randomBattleMoves: ["dragondance", "thousandarrows", "outrage", "extremespeed", "irontail"],
+		randomDoubleBattleMoves: ["dragondance", "thousandarrows", "extremespeed", "rockslide", "coil", "stoneedge", "glare", "protect"],
 		eventPokemon: [
 			{"generation": 6, "level": 70, "moves":["crunch", "earthquake", "camouflage", "dragonpulse"]},
 			{"generation": 6, "level": 100, "moves":["landswrath", "extremespeed", "glare", "outrage"], "pokeball": "cherishball"},
 			{"generation": 7, "level": 50, "moves":["bind", "landswrath", "sandstorm", "haze"]},
+			{"generation": 7, "level": 50, "isHidden": true, "moves":["bind", "landswrath", "sandstorm", "haze"]},
 		],
 		eventOnly: true,
 		tier: "New",
@@ -5684,6 +5694,7 @@ exports.BattleFormatsData = {
 		randomBattleMoves: ["dragondance", "thousandarrows", "outrage", "extremespeed", "irontail", "substitute"],
 		eventPokemon: [
 			{"generation": 7, "level": 30, "moves":["safeguard", "dig", "bind", "landswrath"]},
+			{"generation": 7, "level": 50, "isHidden": true, "moves":["safeguard", "dig", "bind", "landswrath"]},
 		],
 		eventOnly: true,
 		gen: 7,
@@ -5708,7 +5719,7 @@ exports.BattleFormatsData = {
 		randomBattleMoves: ["calmmind", "moonblast", "earthpower", "hiddenpowerfire", "psyshock", "diamondstorm"],
 		randomDoubleBattleMoves: ["diamondstorm", "moonblast", "calmmind", "psyshock", "earthpower", "hiddenpowerfire", "dazzlinggleam", "protect"],
 		requiredItem: "Diancite",
-		tier: "Bank",
+		tier: "Unreleased",
 	},
 	hoopa: {
 		randomBattleMoves: ["nastyplot", "psyshock", "shadowball", "focusblast", "trick"],
@@ -5825,7 +5836,7 @@ exports.BattleFormatsData = {
 		tier: "New",
 	},
 	cutiefly: {
-		tier: "LC",
+		tier: "LC Uber",
 	},
 	ribombee: {
 		randomBattleMoves: ["quiverdance", "bugbuzz", "moonblast", "hiddenpowerfire", "roost", "batonpass"],
@@ -5909,7 +5920,10 @@ exports.BattleFormatsData = {
 		tier: "New",
 	},
 	comfey: {
-		randomBattleMoves: ["sweetkiss", "aromatherapy", "drainingkiss", "toxic", "synthesis"],
+		randomBattleMoves: ["aromatherapy", "drainingkiss", "toxic", "synthesis", "uturn"],
+		eventPokemon: [
+			{"generation": 7, "level": 10, "nature": "Jolly", "isHidden": false, "moves":["celebrate", "leechseed", "drainingkiss", "magicalleaf"], "pokeball": "cherishball"},
+		],
 		tier: "New",
 	},
 	oranguru: {
@@ -5942,7 +5956,7 @@ exports.BattleFormatsData = {
 	},
 	typenull: {
 		eventPokemon: [
-			{"generation": 7, "level": 40, "moves":["crushclaw", "scaryface", "xscissor", "takedown"]},
+			{"generation": 7, "level": 40, "shiny": 1, "moves":["crushclaw", "scaryface", "xscissor", "takedown"]},
 		],
 		eventOnly: true,
 		tier: "NFE",
@@ -6138,7 +6152,7 @@ exports.BattleFormatsData = {
 		tier: "Uber",
 	},
 	lunala: {
-		randomBattleMoves: ["moongeistbeam", "psyshock", "calmmind", "focusblast", "moonlight"],
+		randomBattleMoves: ["moongeistbeam", "psyshock", "calmmind", "focusblast", "roost"],
 		eventPokemon: [
 			{"generation": 7, "level": 55, "moves":["moongeistbeam", "cosmicpower", "nightdaze", "shadowball"]},
 		],
