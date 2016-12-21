@@ -53,7 +53,10 @@ exports.BattleScripts = {
 			sourceEffect = this.getEffect('lockedmove');
 		}
 		pokemon.moveUsed(move);
-		if (zMove) pokemon.side.zMoveUsed = true;
+		if (zMove) {
+			this.add('-zpower', pokemon);
+			pokemon.side.zMoveUsed = true;
+		}
 		this.useMove(move, pokemon, target, sourceEffect, zMove);
 		this.singleEvent('AfterMove', move, null, pokemon, target, move);
 		this.runEvent('AfterMove', pokemon, target, move);
@@ -130,8 +133,8 @@ exports.BattleScripts = {
 			this.add('-clearnegativeboost', pokemon, '[zeffect]');
 		} else if (zMove && move.zMoveEffect === 'redirect') {
 			pokemon.addVolatile('followme', pokemon, {id: 'zpower'});
-		} else if (zMove && move.zMoveEffect === 'crit1') {
-			pokemon.addVolatile('crit1', pokemon, {id: 'zpower'});
+		} else if (zMove && move.zMoveEffect === 'crit2') {
+			pokemon.addVolatile('focusenergy', pokemon, {id: 'zpower'});
 		} else if (zMove && move.zMoveEffect === 'curse') {
 			if (pokemon.hasType('Ghost')) {
 				this.heal(pokemon.maxhp, pokemon, pokemon, {id: 'zpower'});
@@ -779,7 +782,6 @@ exports.BattleScripts = {
 
 	runZMove: function (move, pokemon, target, sourceEffect) {
 		// Limit one Z move per side
-		this.add("-zpower", pokemon);
 		this.runMove(move, pokemon, target, sourceEffect, true);
 	},
 
