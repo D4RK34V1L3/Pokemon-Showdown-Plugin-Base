@@ -9,6 +9,8 @@
 *.crt
 *.gz
 *.tmp
+*.csv
+*.tsv
 
 # Git Portable
 /dev/
@@ -48,7 +50,6 @@ npm
 !/config/ladders/README.md
 /config/bannedwords.txt
 /config/ipbans.txt
-/config/usergroups.csv
 /config/chatrooms.json
 
 # boilerplate #
