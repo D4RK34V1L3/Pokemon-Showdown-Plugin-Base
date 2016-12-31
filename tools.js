@@ -1350,6 +1350,8 @@ class BattleDex {
 		for (const mod in dexes) {
 			dexes[mod].includeData();
 		}
+
+		return this;
 	}
 
 	includeData() {
